@@ -48,7 +48,7 @@ def cmor_cli():
 def run(context, indir, varlist, table_config, exp_config, outdir, opt_var_name):
     # pylint: disable=unused-argument
     """ 
-    Rewrite climate model output files with CMIP-compliant metadata for down-stream publishing 
+    Rewrite climate model output files with CMIP-compliant metadata for down-stream publishing
     """ 
     context.invoke(
         _cmor_run_subtool,
