@@ -445,10 +445,10 @@ def cmorize_target_var_files( indir = None, target_var = None, local_var = None,
         print( Path( tmp_dir     ) )
         print( Path( os.getcwd() ) )
         if Path( tmp_dir ).is_absolute():
-            print(f'tmp_dir is absolute')
+            print('tmp_dir is absolute')
             make_cmor_write_here = tmp_dir
         elif Path( tmp_dir ).exists(): # relative to where we are
-            print(f'tmp_dir is relative to CWD!')
+            print('tmp_dir is relative to CWD!')
             make_cmor_write_here = os.getcwd() + '/'+tmp_dir # unavoidable, cmor module FORCES write to CWD
         assert make_cmor_write_here is not None
 
@@ -510,8 +510,8 @@ def cmorize_target_var_files( indir = None, target_var = None, local_var = None,
             Path(nc_ps_file_work).unlink()
 
         if DEBUG_MODE_RUN_ONE:
-            print(f'WARNING: DEBUG_MODE_RUN_ONE is True!!!!')
-            print(f'WARNING: done processing one file!!!')
+            print('WARNING: DEBUG_MODE_RUN_ONE is True!!!!')
+            print('WARNING: done processing one file!!!')
             break
 
 
@@ -635,7 +635,7 @@ def cmor_run_subtool( indir = None,
         )
 
         if DEBUG_MODE_RUN_ONE:
-            print(f'WARNING: DEBUG_MODE_RUN_ONE is True. breaking var_list loop')
+            print('WARNING: DEBUG_MODE_RUN_ONE is True. breaking var_list loop')
             break
     return 0
 
